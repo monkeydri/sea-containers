@@ -71,7 +71,8 @@ a {
 .close-tab {
   margin-inline-start: auto;
   margin-inline-end: 6px;
-  background-image: url("img/close.svg");
+  background-image: url("img/close-white.svg");
+  background-color: inherit;
 }
 
 .close-tab:hover {
@@ -94,8 +95,8 @@ a {
 }
 
 .tab-container {
-  background: rgb(251, 251, 251);
-  color: rgb(51, 51, 51);
+  background: inherit;
+	color: inherit;
 }
 
 .closed .tab-container {
@@ -111,7 +112,7 @@ a {
   display: flex;
   --in-content-border-highlight: transparent;
   border-inline-start: 4px solid var(--in-content-border-highlight);
-  border-block-end: 1px solid #efefef;
+  border-block-end: 1px solid #393939;
 }
 
 .tab-item:last-of-type {
@@ -144,10 +145,10 @@ a {
 }
 
 .tab-item.active {
-  --in-content-border-highlight: #0052cc;
+  background-color: #3c4146;
 }
 .tab-item:hover {
-  background-color: #eee;
+  background-color: #474849;
 }
 
 .pinned-tabs {
